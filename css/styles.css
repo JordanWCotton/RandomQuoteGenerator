@@ -1,0 +1,45 @@
+body {
+  background-color: #8e44ad;
+  color: #333333;
+}
+
+.ghost_div {
+  height: 150px;
+}
+
+#quote_box {
+  margin-top: 8%;
+  text-align: center;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+}
+
+#quote {
+  padding: 15px;
+}
+
+#author {
+  padding-bottom: 10px;
+}
+
+#quote_button {
+  float: left;
+  margin-bottom: 2%;
+  background-color: #9b59b6;
+  color: #ecf0f1;
+}
+
+#tweet {
+  float: right;
+  margin-bottom: 2%;
+  background-color: #55acee;
+}
+
+footer {
+  color: #ecf0f1;
+
+}
+
+footer h5 {
+  padding-left: 30px;
+}
