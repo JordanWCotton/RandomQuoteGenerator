@@ -43,3 +43,12 @@ footer {
 footer h5 {
   padding-left: 30px;
 }
+
+@media only screen and (max-width: 750px) {
+  #quote-box {
+    margin-top: 20%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+
