@@ -15,7 +15,7 @@ $('#quote_button').on("click", function() {
 var tweet_content = "";
 
 function generateQuote () {
-  $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(val)   {
+  $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(val)   {
     $("#quote").html(val.quoteText);
 
     if (!val.quoteAuthor) { 
