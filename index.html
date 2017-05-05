@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-    <div id="content" class="container_fluid" >
+    <div id="content" class="container-fluid" >
       <div class="row">
-        <div id="quote_box" class="col-sm-4 col-sm-offset-4">
+        <div id="quote-box" class="col-md-4 offset-md-4">
           <div id="quote"></div>
           <div id="author"></div>
           <div id="buttons">
-            <button id="quote_button" class="btn btn-">New Quote</button>
-            <a id="tweet" class="btn btn-info"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
+            <button id="quote-button" class="btn">New Quote</button>
+            <a href="https://twitter.com/share" target="_blank" class="twitter-share-button btn" id="tweet" data-show-count="false">Tweet</a>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script type="text/javascript" async src="//platform.twitter.com/widgets.js"></script>
-    <script src="https://use.fontawesome.com/950733c079.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="scripts/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" 
+  crossorigin="anonymous"></script>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="scripts/script.js"></script>
   </body>
-  <footer class="navbar-fixed-bottom">
-    <h5>Created by Jordan Cotton using BootStrap, FontAwesome and the Forismatic API.</h5>
+  <footer class="navbar fixed-bottom">
+    <p>Created by Jordan Cotton using BootStrap, FontAwesome and the Forismatic API.</p>
   </footer>
 </html>

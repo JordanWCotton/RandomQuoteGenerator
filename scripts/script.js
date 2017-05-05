@@ -8,7 +8,7 @@ $('#tweet').click(function() {
   $(this).attr("href", "https://twitter.com/intent/tweet?text=" + tweet_content);
 });
 
-$('#quote_button').on("click", function() { //Calls the function for every click
+$('#quote_button').on("click", function() { 
   generateQuote();
 });
 
@@ -18,7 +18,7 @@ function generateQuote () {
   $.getJSON("http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(val)   {
     $("#quote").html(val.quoteText);
 
-    if (!val.quoteAuthor) {  //If there is no author data, adds '-Anonymous'
+    if (!val.quoteAuthor) { 
       $("#author").html("- Anonymous");
     }
     else {

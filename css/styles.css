@@ -3,11 +3,7 @@ body {
   color: #333333;
 }
 
-.ghost_div {
-  height: 150px;
-}
-
-#quote_box {
+#quote-box {
   margin-top: 8%;
   text-align: center;
   background-color: #ecf0f1;
@@ -22,7 +18,7 @@ body {
   padding-bottom: 10px;
 }
 
-#quote_button {
+#quote-button {
   float: left;
   margin-bottom: 2%;
   background-color: #9b59b6;
@@ -33,6 +29,7 @@ body {
   float: right;
   margin-bottom: 2%;
   background-color: #55acee;
+  color: #ecf0f1;
 }
 
 footer {
