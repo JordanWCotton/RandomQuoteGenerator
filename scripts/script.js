@@ -1,4 +1,4 @@
-$(function () {     //Call our quote function once upon user landing on-page
+$(function () {  //Call our quote function once upon user landing on-page
   generateQuote();
 });
 
@@ -15,8 +15,10 @@ $('#quote_button').on("click", function() {
 var tweet_content = "";
 
 function generateQuote () {
-  $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(val)   {
-    $("#quote").html(val.quoteText);
+  $.ajax({ dataType: 'jsonp',
+    url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1", 
+  success: function callback (val)   {
+    /* $("#quote").html(val.quoteText);
 
     if (!val.quoteAuthor) { 
       $("#author").html("- Anonymous");
@@ -25,7 +27,11 @@ function generateQuote () {
     $("#author").html("- " + val.quoteAuthor);
     }
 
-    tweet_content = '"' + val.quoteText + '"' + " -" + val.quoteAuthor;
+    tweet_content = '"' + val.quoteText + '"' + " -" + val.quoteAuthor; */
 
+    console.log(val);
+  },
    });
+
+   
 }
