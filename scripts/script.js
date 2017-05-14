@@ -8,7 +8,7 @@ $('#tweet').click(() => {
   $(this).attr("href", "https://twitter.com/intent/tweet?text=" + tweet_content);
 });
 
-$('#quote-button').on("click", () => { 
+ $('#quote-button').on("click", () => { 
   generateQuote();
 });
 
@@ -16,25 +16,23 @@ let tweet_content = "";
 
 let generateQuote = () => {
   $.ajax({ headers: {
-    "X-Mashape-Key": '8MtOjsB8wzmshjFt2sWPsjjcpyhdp1yIpkzjsnu3M83ysYSI9h',
+    "X-Mashape-Key": '',
     Accept: 'application/json',
     "Content-Type": 'application/x-www-form-urlencoded'
   },
   url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=1", 
   success: (res) => {
-    let val = JSON.parse(res);
+   $("#quote").html(res.quote);
 
-   $("#quote").html(val.quote);
-
-    if (!val.author) { 
+    if (!res.author) { 
       $("#author").html("- Anonymous");
     }
     else {
-    $("#author").html("- " + val.author);
+    $("#author").html("- " + res.author);
     }
 
     //Prepopulate the content of the tweet if the user decides to tweet it
-    tweet_content = '"' + val.quote + '"' + " -" + val.author; 
+    tweet_content = '"' + res.quote + '"' + " -" + res.author; 
   }
    });
 
