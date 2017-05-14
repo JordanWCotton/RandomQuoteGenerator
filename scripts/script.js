@@ -1,4 +1,5 @@
 $(() => {  //Call our quote function once upon user landing on-page
+  localStorage.clear(); //Fix issue with local storage incorectly storing expired keys
   generateQuote();
 });
 
