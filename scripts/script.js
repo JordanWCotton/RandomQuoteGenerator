@@ -23,7 +23,7 @@ let tweet_content = "";
 
 let generateQuote = () => {
   $.ajax({ headers: {
-    "X-Mashape-Key": '',
+    "X-Mashape-Key": 'mrtYWAPRo0mshNBnK4ZzNl69NU1wp1tVDuSjsnL0FbMUj4wdgz',
     Accept: 'application/json',
     "Content-Type": 'application/x-www-form-urlencoded'
   },
