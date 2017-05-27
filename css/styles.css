@@ -25,8 +25,9 @@ body {
   color: #ecf0f1;
 }
 
-#tweet {
+.twitter-share-button {
   margin-top: 8%;
+  float: right;
 }
 
 footer {
