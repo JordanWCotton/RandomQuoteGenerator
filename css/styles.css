@@ -26,7 +26,8 @@ body {
 }
 
 #tweet {
-  
+  float: right;
+  margin-top: 8%;
 }
 
 footer {
